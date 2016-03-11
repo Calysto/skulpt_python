@@ -73,6 +73,14 @@ require([window.location.protocol + "//calysto.github.io/javascripts/skulpt/skul
        Sk.canvas = "canvas_" + id;
        Sk.pre = "output_" + id;
        Sk.configure({output:outf_%(id)s, read:builtinRead, python3:false}); 
+       Sk.externalLibraries = {
+          processing : {
+             path : 'processing/__init__.js',   // path to where the main file is located
+             dependencies : [
+                'http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js'
+             ]
+          },
+       };
        var myPromise = Sk.misceval.asyncToPromise(function() {
            return Sk.importMainWithBody("<stdin>", false, prog, true);
        });
