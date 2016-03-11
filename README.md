@@ -10,13 +10,13 @@ Skulpt Kernel in use:
 You can install Skulpt Kernel with:
 
 ```
-pip install --upgrade skulpt-kernel
+pip install --upgrade skulpt_python
 ```
 
 or in the system kernels with:
 
 ```
-sudo pip install --upgrade skulpt-kernel
+sudo pip install --upgrade skulpt_python
 ```
 
 Use it in the notebook with:
@@ -29,7 +29,7 @@ and select `Skulpt Python` as the kernel for a new notebook.
 
 Requires:
 
-* ipython-3.0
+* ipython-3.0+
 * Python2 or Python3
 * metakernel (installed with pip)
 * calysto (installed with pip)
